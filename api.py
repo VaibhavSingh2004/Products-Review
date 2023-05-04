@@ -1,10 +1,10 @@
 import csv
-import fatch
+import fetch
 Product_Name,name,rating,commentHead,custComment,productLink=[],[],[],[],[],[]
 
 
 def read(query):
-	file_name=fatch.data_fatch(query)
+	file_name = fetch.data_fetch(query)
 	print(file_name)
 	with open(f"{file_name}.csv",'r',encoding="utf8" )as csv_file:
 		csv_reader=csv.reader(csv_file)
